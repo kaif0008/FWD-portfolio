@@ -2,10 +2,25 @@
 
 This is the official GitHub repository for my personal portfolio website. The site serves as a central hub to showcase my projects, skills, and experience as an aspiring **Java Developer** and **AI/ML enthusiast**. The website is designed to be clean, modern, and fully responsive.
 
-**Live Demo:** [protfolio.demo](https://lovable.dev)
+**Live Demo:** [protfolio.demo](https://kaif0008.github.io/FWD-portfolio/)
 
 ---
-
+## Repo Structure
+```
+portfolio-project/
+│
+├── index.html          # main HTML file
+│
+├── styles.css          # main CSS file for styling
+│
+├── script.js           # main JavaScript file for interactivity
+│
+├── img/                # All images
+│   ├── profile-photo.jpeg
+│   └── project-screenshot.png
+│
+└── README.md           # Explains project.
+```
 ## Features
 
 - **Modern Design:** A clean and professional UI with smooth animations and a focus on readability.  
