@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaif Ansari - Java Developer & AI Enthusiast</title>
+    <meta name="description" content="Portfolio of Kaif Ansari - Aspiring Java Developer and AI/ML enthusiast. Explore my projects, skills, and experience in software development." />
+    <meta name="author" content="Kaif Ansari" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="Kaif Ansari - Java Developer & AI Enthusiast" />
+    <meta property="og:description" content="Portfolio showcasing projects and skills in Java development and AI/ML" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kaif Ansari - Java Developer & AI Enthusiast" />
+    <meta name="twitter:description" content="Portfolio showcasing projects and skills in Java development and AI/ML" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <!-- <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script> -->
+    <script>
+      (function(){
+         emailjs.init("QBckqTQFXbCnSpXYT"); // replace with your Public Key
+       })();
+    </script>
+
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo"></a>
+        
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="nav-mobile">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+      </div>
+    
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🚀 Available for Opportunities</span>
+        </div>
+    
+        <h1 class="hero-title">
+          <span class="title-line">I'm <span class="text-gradient">Kaif Ansari</span></span>
+        </h1>
+    
+        <p class="tagline">
+          <span class="typing-text">Aspiring Java Developer</span>
+        </p>
+    
+        <p class="description">
+          Crafting innovative solutions with <strong>Java</strong>, <strong>AI/ML</strong>, and modern web technologies.
+          Passionate about building impactful applications that solve real-world problems.
+        </p>
+    
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+        
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="smoothScroll('#projects')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+              <line x1="12" y1="22" x2="12" y2="15.5"></line>
+              <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+              <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+              <line x1="12" y1="15.5" x2="12" y2="8.5"></line>
+            </svg>
+            View My Work
+          </button>
+          <button class="btn btn-outline" onclick="smoothScroll('#contact')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg>
+            Get In Touch
+          </button>
+          <a href="https://drive.google.com/file/d/1Zd-iZHtpjIL76LaQHcLoeZP8mVeUFDOF/view?usp=sharing" download class="btn btn-secondary">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Download CV
+          </a>
+        </div>
+
+        <!-- Smooth scroll -->
+
+        <script>
+          function smoothScroll(target) {
+            const element = document.querySelector(target);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        </script>
+
+      </div>
+      </div>
+    
+      <div class="scroll-indicator">
+        <div class="scroll-text">Scroll to explore</div>
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="img/profile-photo.jpeg" alt="Kaif Ansari" />
+          </div>
+          
+          <div class="about-content">
+            <p>
+              Hello! I'm <span class="highlight">Kaif Ansari</span>, a Computer Science and Engineering student with a strong proficiency in <strong>Java and C/C++</strong>. I'm passionate about building robust backend systems and intelligent applications.
+            </p>
+            
+            <p style="color: var(--text-secondary);">
+              My journey in tech is about creating practical solutions. I've applied object-oriented principles to develop a <strong>Real-Time Chat Application in Java</strong>, and I combine that backend expertise with my growing knowledge in AI/ML to tackle complex projects like building and deploying an end-to-end <strong>Employee Salary Prediction App</strong>.
+            </p>
+            
+            <p style="color: var(--text-secondary);">
+              Through internships at <span class="highlight">Cognifyz Technologies</span> and <span class="highlight">Edunet-IBM</span>, I've gained hands-on experience in Java development, data preprocessing, and deploying machine learning models with APIs.
+            </p>
+            
+            <div class="career-goal">
+              <h3>Career Goal</h3>
+              <p style="color: var(--text-secondary);">
+                To leverage my skills in Java development and AI/ML to build scalable, intelligent applications that solve real-world problems and deliver high-quality, innovative software solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+            <!-- Education Section -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="education-info">
+                <h3>B.Tech in Computer Science</h3>
+                <p class="education-institution">Teerthanker Mahaveer University</p>
+                <span class="education-period">2023 - 2027</span>
+              </div>
+            </div>
+            <div class="education-status">
+              <span class="status-badge">Pursuing</span>
+              <span class="gpa">Expected Graduation: 2027</span>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="education-info">
+                <h3>Intermediate (12th)</h3>
+                <p class="education-institution">Bhupesh Gupta Inter College (BSEB)</p>
+                <span class="education-period">2021 - 2023</span>
+              </div>
+            </div>
+            <div class="education-status">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="education-info">
+                <h3>High School (10th)</h3>
+                <p class="education-institution">CBSE</p>
+                <span class="education-period">2020 - 2021</span>
+              </div>
+            </div>
+            <div class="education-status">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-content">
+              <div class="skill-icon">
+                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3>Java</h3>
+                <p>Core Java, OOP, Spring Boot, REST APIs</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-content">
+              <div class="skill-icon">
+                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3>C/C++</h3>
+                <p>Data Structures, Algorithms</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-content">
+              <div class="skill-icon">
+                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3>SQL</h3>
+                <p>MySQL, Database Design, Query Optimization</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-content">
+              <div class="skill-icon">
+                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3>AI/ML</h3>
+                <p>Machine Learning, Python, Data Analysis</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-content">
+              <div class="skill-icon">
+                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3>Git/GitHub</h3>
+                <p>Version Control, Collaboration, CI/CD</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-content">
+              <div class="skill-icon">
+                <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3>Web Technologies</h3>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          A showcase of my work in software development, combining backend expertise with modern technologies.
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Employee Salary Prediction App</h3>
+            </div>
+            <div class="project-body">
+              <p>Machine learning application that predicts employee salaries based on experience, role, and other factors using regression algorithms.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-sm btn-outline-sm" onclick="window.open('https://github.com/kaif0008/employee-salary-prediction', '_blank')">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Code
+              </button>
+              <button class="btn-sm btn-primary-sm" onclick="window.open('https://employee-salary-prediction-wpy6.onrender.com', '_blank')">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Real-Time Chat Application</h3>
+            </div>
+            <div class="project-body">
+              <p>Full-stack chat application with real-time messaging, user authentication, and group chat functionality.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">WebSocket</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="btn-sm btn-outline-sm" onclick="window.open('https://github.com/kaif0008/Chat-Application-using-JAVA.git', '_blank')">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Code
+              </button>
+              
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>NexTrade Platform</h3>
+            </div>
+            <div class="project-body">
+              <p>E-commerce trading platform with advanced search, payment integration, and inventory management system.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="experience-timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Front-End Development Intern</h3>
+                <span class="timeline-period">August 2025 - Present</span>
+              </div>
+              <p class="timeline-company">Edunet-IBM</p>
+              <ul class="timeline-list">
+                <li>6-week intensive internship focused on Front-End Web Development, leveraging the IBM SkillsBuild e-learning platform.</li>
+                
+              </ul>
+              <div class="project-footer">
+              <button class="btn-sm btn-outline-sm">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Project
+              </button>
+              <button class="btn-sm btn-primary-sm">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Ongoing
+              </button>
+            </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>AI/ML Intern</h3>
+                <span class="timeline-period">June 2025 - Augest 2025</span>
+              </div>
+              <p class="timeline-company">Edunet-IBM</p>
+              <ul class="timeline-list">
+                <li>Worked on machine learning projects using Python and TensorFlow</li>
+                <li>Built predictive models for data analysis and pattern recognition</li>
+                <li>Participated in workshops on IBM Watson AI and cloud computing</li>
+                <li>Developed data preprocessing pipelines for ML model training</li>
+              </ul>
+              <div class="project-footer">
+              <button class="btn-sm btn-outline-sm" onclick="window.open('https://github.com/kaif0008/employee-salary-prediction', '_blank')">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Project
+              </button>
+              <button class="btn-sm btn-primary-sm" onclick="window.open('https://drive.google.com/file/d/1ep98FRP1fNdQdRlWgoW2gC_HMe1wvaaQ/view?usp=sharing', '_blank')">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Completion Certificate
+              </button>
+            </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Java Development Intern</h3>
+                <span class="timeline-period">June 2025 - July 2025</span>
+              </div>
+              <p class="timeline-company">Cognifyz Technologies</p>
+              <ul class="timeline-list">
+                <li>Developed and maintained Java-based applications using Spring Boot framework</li>
+                <li>Implemented RESTful APIs for seamless frontend-backend integration</li>
+                <li>Collaborated with senior developers on code reviews and best practices</li>
+                <li>Optimized database queries resulting in 30% performance improvement</li>
+              </ul>
+              <div class="project-footer">
+              <button class="btn-sm btn-outline-sm" onclick="window.open('https://github.com/kaif0008/Chat-Application-using-JAVA.git', '_blank')">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Project
+              </button>
+              <button class="btn-sm btn-primary-sm" onclick="window.open('https://drive.google.com/file/d/1z3OW9k9goP0yETY70k5pgOiVTLeiySgd/view?usp=sharing', '_blank')">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Completion Certificate
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    
+    <div class="certifications-grid">
+      <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs57/Course/NPTEL25CS57S115220000304428865.pdf" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>Programming in Java</h3>
+            <p class="cert-issuer">NPTEL, IIT Kharagpur • Jan-Apr 2025</p>
+            <p>• Core Java programming covering OOP concepts.<br>• Achieved a consolidated score of 92%, placing me in the top 1% of 16,040 certified candidates</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="https://drive.google.com/file/d/1nuRCna95FIMJ5Y8SWXOBa9nNu6ov8F0l/view?usp=sharing" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>Java Training</h3>
+            <p class="cert-issuer">IIT Bombay • May 2025</p>
+            <p>Successfully completed Java training and passed the remotely conducted online exam from IIT Bombay with a score of 87.50%</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.credly.com/badges/a39248b4-3985-4f90-a9ef-48e28fad8fc1/linked_in_profile" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>Artificial Intelligence Fundamentals</h3>
+            <p class="cert-issuer">IBM SkillsBuild • July 2025</p>
+            <p>Earned a certificate for successfully satisfying the requirements for Artificial Intelligence Fundamentals</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="https://skills.yourlearning.ibm.com/certificate/share/0fff2d3bd0ewogICJsZWFybmVyQ05VTSIgOiAiNDgzMDIwM1JFRyIsCiAgIm9iamVjdFR5cGUiIDogIkFDVElWSVRZIiwKICAib2JqZWN0SWQiIDogIlBMQU4tOEE0ODY0NTE5NkZBIgp9f8ba1b37af-10" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>Edunet-Artificial Intelligence</h3>
+            <p class="cert-issuer">IBM SkillsBuild • July 2025</p>
+            <p>Machine learning algorithms and AI implementation<br>Received a certificate for the completion of the "Edunet-Artificial Intelligence" learning plan</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.coursera.org/account/accomplishments/verify/F1DI9FRMLTJI" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>Getting Started with Git and GitHub</h3>
+            <p class="cert-issuer">IBM (via Coursera) • July 2025</p>
+            <p>Version control, collaboration, and GitHub best practices</p>
+          </div>
+        </div>
+      </a>
+
+      
+
+      <a href="https://www.hackerrank.com/certificates/4797a38d1840" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>Java (Basic)</h3>
+            <p class="cert-issuer">HackerRank • July 2025</p>
+            <p>Passed the HackerRank skill certification test, demonstrating proficiency in fundamental Java concepts</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1XjI0PTFOJxUFIbb8rGs-UXSN8_5u5Onp/view?usp=sharing" target="_blank" class="cert-card">
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h3>C Training</h3>
+            <p class="cert-issuer">IIT Bombay • Dec 2024</p>
+            <p>Completed C language training and passed the final online examination from IIT Bombay with a score of 90.00%</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          I'm always open to discussing new projects, opportunities, or collaborations. 
+          Feel free to reach out!
+        </p>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <p>Email</p>
+                <a href="mailto:kaif@example.com">mrkaif7295@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <p>Location</p>
+                <p>Moradabad, UttarPradesh 244001, India</p>
+              </div>
+            </div>
+            
+            <h3 class="social-title">Connect With Me</h3>
+            <div class="social-links">
+              <button class="social-btn" data-url="https://www.linkedin.com/in/kaif-ansari-3b264b279" aria-label="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </button>
+              <button class="social-btn" data-url="https://github.com/kaif0008" aria-label="GitHub">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="from_name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="from_email" class="form-input" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Send Message
+            </button>
+          </form>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2025 Kaif Ansari.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
