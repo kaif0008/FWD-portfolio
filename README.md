@@ -1,4 +1,4 @@
-# Kaif Ansari - Personal Portfolio Website
+# Kaif Ansari - Interactive Digital Portfolio
 
 This is the official GitHub repository for my personal portfolio website. The site serves as a central hub to showcase my projects, skills, and experience as an aspiring **Java Developer** and **AI/ML enthusiast**. The website is designed to be clean, modern, and fully responsive.
 
@@ -67,3 +67,4 @@ cd your-repo-name
 # License
 
 This project is licensed under the MIT License.
+
